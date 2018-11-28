@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ANSIBLE_VERSION=2.7.0
+ANSIBLE_VERSION=2.7.1
 
 docker build \
   --build-arg ANSIBLE_VERSION=${ANSIBLE_VERSION} \
