@@ -9,4 +9,7 @@ RUN apk --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.8/main/ 
     sshpass openssh-client rsync bash git openssh                                           && \
     pip install --upgrade pip                                                               && \
     pip install --upgrade pycrypto cffi ansible==${ANSIBLE_VERSION}                         && \
-    rm -rf /tmp/*
+    rm -rf /tmp/*                                                                           && \
+    adduser -D ansible
+
+USER ansible
