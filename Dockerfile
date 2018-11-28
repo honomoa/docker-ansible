@@ -1,7 +1,7 @@
 FROM alpine:3.8
 
 ARG ANSIBLE_VERSION
-ENV ANSIBLE_VERSION=${ANSIBLE_VERSION:-2.5.11}
+ENV ANSIBLE_VERSION=${ANSIBLE_VERSION:-2.6.8}
 
 RUN apk --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.8/main/ upgrade     && \
     apk --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.8/main/ add            \
