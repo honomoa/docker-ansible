@@ -8,7 +8,7 @@ RUN apk --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.8/main/ 
     python py-pip openssl ca-certificates python-dev libffi-dev openssl-dev build-base         \
     sshpass openssh-client rsync bash git openssh                                           && \
     pip install --upgrade pip                                                               && \
-    pip install --upgrade pycrypto cffi ansible==${ANSIBLE_VERSION}                         && \
+    pip install --upgrade pycrypto cffi ansible==${ANSIBLE_VERSION} boto                    && \
     rm -rf /tmp/*                                                                           && \
     adduser -D ansible
 
