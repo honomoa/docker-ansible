@@ -10,7 +10,7 @@ Jenkinsfile:
 pipeline {
   agent {
     docker {
-      image 'honomoa/jenkins-ansible'
+      image 'honomoa/ansible'
     }
   }
   stages {
