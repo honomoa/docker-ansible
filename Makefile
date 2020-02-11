@@ -43,7 +43,7 @@ push:
 
 .PHONY: show
 show:
-	@ECHO $(IMAGE_URL_VERSION) \
+	@echo $(IMAGE_URL_VERSION) \
 		$(IMAGE_URL_LATEST) \
 		$(IMAGE_URL_BASE) \
 		alpine:3.8
