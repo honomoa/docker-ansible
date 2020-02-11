@@ -1,14 +1,9 @@
 #!/bin/sh
 
-VERSIONS="2.6.19 2.6.20 2.7.13 2.7.14 2.7.15 2.8.5 2.8.6 2.8.7 2.9.0 2.9.1 2.9.2"
+VERSIONS="2.7.16 2.8.8 2.9.3 2.9.4"
 
-for VER in ${VERSIONS}
+for VERSION in ${VERSIONS}
 do
-  make build-ansible-${VER}
+  BUILD_VERSION=${VERSION} make
+  BUILD_VERSION=${VERSION} make push
 done
-for VER in ${VERSIONS}
-do
-  make push-ansible-${VER} && make clean-ansible-${VER}
-done
-
-make push-base && make clean-base
