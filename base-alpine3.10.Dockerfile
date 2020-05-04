@@ -1,9 +1,9 @@
-FROM alpine:3.8
+FROM alpine:3.10
 
 ENV OS=linux
 ENV ARCH=amd64
 
-ENV ALPINE_REPOSITORY=http://dl-cdn.alpinelinux.org/alpine/v3.8/main/
+ENV ALPINE_REPOSITORY=http://dl-cdn.alpinelinux.org/alpine/v3.10/main/
 
 RUN apk --no-cache --repository $ALPINE_REPOSITORY upgrade      && \
     apk --no-cache --repository $ALPINE_REPOSITORY add             \

@@ -1,5 +1,5 @@
 ARG REGISTRY_ENDPOINT
-FROM ${REGISTRY_ENDPOINT}/ansible:base-alpine3.8                                                                                                                                                                                                         
+FROM ${REGISTRY_ENDPOINT}/ansible:base-alpine3.10
 
 ARG ANSIBLE_VERSION
 ENV ANSIBLE_VERSION=${ANSIBLE_VERSION}
