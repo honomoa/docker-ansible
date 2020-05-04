@@ -1,6 +1,6 @@
 #!/bin/sh
 
-VERSIONS="2.7.16 2.8.8 2.9.3 2.9.4"
+VERSIONS="2.7.17 2.8.9 2.8.10 2.8.11 2.9.5 2.9.6 2.9.7"
 
 for VERSION in ${VERSIONS}
 do
